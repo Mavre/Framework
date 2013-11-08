@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite 1]">
+  <test name="testNG test1(failed)">
+    <classes>
+      <class name="com.epam.reutska.tests.TestFilterByProducer">
+        <methods>
+          <include name="setUp"/>
+          <include name="testFilterByProducer" invocation-numbers="0"/>
+          <include name="initPages"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.epam.reutska.tests.TestFilterByProducer -->
+    </classes>
+  </test> <!-- testNG test1(failed) -->
+</suite> <!-- Failed suite [Suite 1] -->

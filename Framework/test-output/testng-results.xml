@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="183081" started-at="2013-11-07T12:44:13Z" finished-at="2013-11-07T12:47:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="183081" started-at="2013-11-07T12:44:13Z" finished-at="2013-11-07T12:47:16Z">
+      <class name="com.epam.reutska.tests.GoodsInformation">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.reutska.tests.GoodsInformation@52f9b2]" name="init" is-config="true" duration-ms="21" started-at="2013-11-07T14:44:13Z" finished-at="2013-11-07T14:44:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.reutska.tests.GoodsInformation@52f9b2]" name="setUp" is-config="true" duration-ms="8230" started-at="2013-11-07T14:44:13Z" finished-at="2013-11-07T14:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initPages()[pri:0, instance:com.epam.reutska.tests.GoodsInformation@52f9b2]" name="initPages" is-config="true" duration-ms="19" started-at="2013-11-07T14:44:22Z" finished-at="2013-11-07T14:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method status="PASS" signature="testGoodsInformation(java.lang.String)[pri:0, instance:com.epam.reutska.tests.GoodsInformation@52f9b2]" name="testGoodsInformation" duration-ms="174468" started-at="2013-11-07T14:44:22Z" data-provider="readPositiveTest" finished-at="2013-11-07T14:47:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Кондиционеры]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoodsInformation -->
+      </class> <!-- com.epam.reutska.tests.GoodsInformation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
