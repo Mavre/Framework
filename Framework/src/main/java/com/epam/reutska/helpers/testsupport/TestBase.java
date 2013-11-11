@@ -22,12 +22,12 @@ public class TestBase {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	protected MainPage mainPage;
 
-	@BeforeClass
+	@BeforeMethod
 	public void init() {
 		TestConfig.setTestName(this.getClass().getSimpleName());
 	}
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = WebDriverFactory.getDriver(TestConfig.getCapabilities());
 
