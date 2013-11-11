@@ -38,7 +38,7 @@ public class TestBase {
 	}
 
 	protected MainPage goToMainPage() {
-		init();
+	
 		driver.get(baseUrl + "/");
 		mainPage = new MainPage(driver);
 		PageFactory.initElements(driver, mainPage);
