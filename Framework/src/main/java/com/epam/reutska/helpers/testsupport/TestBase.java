@@ -27,7 +27,7 @@ public class TestBase {
 		TestConfig.setTestName(this.getClass().getSimpleName());
 	}
 
-	@BeforeMethod
+	@BeforeTest
 	public void setUp() throws Exception {
 		driver = WebDriverFactory.getDriver(TestConfig.getCapabilities());
 
