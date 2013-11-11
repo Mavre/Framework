@@ -62,7 +62,7 @@ public class TestConfig {
 
 	// private static String server = "http://localhost/Maslova/";
 
-	private static String className = "";
+	private static volatile String className = "";
 
 	private static int excelSheetForPositiveTest = 0;
 
