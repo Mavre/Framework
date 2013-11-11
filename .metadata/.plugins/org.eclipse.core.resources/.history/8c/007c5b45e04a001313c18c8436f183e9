@@ -2,7 +2,6 @@ package com.epam.reutska.helpers.testsupport;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,7 +19,7 @@ public class TestBase {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	protected MainPage mainPage;
 
-	@BeforeClass
+	@BeforeMethod
 	public void init() {
 		TestConfig.setTestName(this.getClass().getSimpleName());
 	}
