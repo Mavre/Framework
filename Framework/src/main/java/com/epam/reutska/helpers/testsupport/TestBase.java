@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Factory;
 
 import com.epam.reutska.configuration.TestConfig;
 import com.epam.reutska.helpers.core.WebDriverFactory;
@@ -22,11 +23,10 @@ public class TestBase {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	protected MainPage mainPage;
 
-	@BeforeMethod
-	public void init() {
+	@Factory
+	public TestBase() {
 		TestConfig.setTestName(this.getClass().getSimpleName());
 	}
-
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = WebDriverFactory.getDriver(TestConfig.getCapabilities());
