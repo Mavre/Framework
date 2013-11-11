@@ -135,3 +135,40 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 2013-11-11 12:38:49,286 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
 2013-11-11 12:38:49,287 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2013-11-11 12:38:49,287 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 12:41:33,086 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 12:41:33,086 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 12:41:33,087 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 12:41:33,087 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 13:22:41,008 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:22:41,008 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 13:22:41,009 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:22:41,009 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 13:22:42,047 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:22:42,047 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 13:22:42,048 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:22:42,048 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 13:25:50,573 [Worker-38] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-11-11 13:25:50,675 [Worker-38] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Framework1:Framework1:0.0.1-SNAPSHOT @ D:\Framework\Framework\pom.xml.
+2013-11-11 13:25:51,284 [Worker-38] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Framework/src/main/java
+2013-11-11 13:25:51,284 [Worker-38] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Framework/src/test/java
+2013-11-11 13:25:51,623 [Worker-38] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2013-11-11 13:25:52,025 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:25:52,025 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 13:25:52,026 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:25:52,026 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 13:42:31,988 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:42:31,988 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 13:42:31,989 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 13:42:31,989 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 14:23:37,074 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 14:23:37,074 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 14:23:37,075 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 14:23:37,075 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 15:07:12,572 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 15:07:12,572 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 15:07:12,574 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 15:07:12,574 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources
+2013-11-11 15:07:13,649 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 15:07:13,649 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\main\resources
+2013-11-11 15:07:13,651 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-11 15:07:13,651 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Framework\Framework\src\test\resources

@@ -23,7 +23,7 @@ public class FilterPageHelper {
 	public static List<BaseGood> getFilterResults(FilterPage filterPage,
 			boolean readAllParams) {
 		List<BaseGood> results = new ArrayList<>();
-		//int i = 0;
+		int i = 0;
 		do {
 			for (int j = 0; j < filterPage.getFilterResultsComponents()
 					.getLinkResultItems().size(); j++) {
@@ -32,9 +32,9 @@ public class FilterPageHelper {
 			if (filterPage.getNavigationComponent().hasNext()) {
 				filterPage.clickLinkNavigationNext();
 
-				/*i++;
+				i++;
 				if (i == 3)
-					break;*/
+					break;
 
 			}
 		} while (filterPage.getNavigationComponent().hasNext());
