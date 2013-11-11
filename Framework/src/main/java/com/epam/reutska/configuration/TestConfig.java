@@ -37,7 +37,13 @@ public class TestConfig {
 	}
 
 	public static Capabilities getCapabilities() {
-		switch (props.getProperty("browser")) {
+		String browser;
+		if (System.getProperty("browser") != null){
+			browser = System.getProperty("browser");
+		} else {
+			browser = props.getProperty("browser");
+		}
+		switch (browser) {
 		case "firefox":
 			return DesiredCapabilities.firefox();
 		case "opera":
