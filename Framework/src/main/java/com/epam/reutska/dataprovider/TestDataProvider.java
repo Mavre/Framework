@@ -12,7 +12,7 @@ public class TestDataProvider {
 	private static DataSourceFactory dataSourceFactory= new DataSourceFactory();
 	
 	@DataProvider
-	public static Object[][] readPositiveTest( int sheetNumber) throws IOException {
+	public static Object[][] readPositiveTest() throws IOException {
 		return dataSourceFactory.getReader().read(TestConfig.getSheetForPositiveTest());
 	}
 
