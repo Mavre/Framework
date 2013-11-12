@@ -2,7 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
-<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
-<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Factory"/>
 </qualifiedTypeNameHistroy>

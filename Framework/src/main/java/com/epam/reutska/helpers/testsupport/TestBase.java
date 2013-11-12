@@ -23,8 +23,8 @@ public class TestBase {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	protected MainPage mainPage;
 
-	@Factory
-	public TestBase() {
+	@BeforeTest
+	public void init() {
 		TestConfig.setTestName(this.getClass().getSimpleName());
 	}
 	@BeforeMethod
