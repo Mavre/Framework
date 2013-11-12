@@ -13,12 +13,12 @@ public class TestDataProvider {
 	
 	@DataProvider
 	public static Object[][] readPositiveTest( int sheetNumber) throws IOException {
-		return dataSourceFactory.readAll(TestConfig.getSheetForPositiveTest());
+		return dataSourceFactory.getReader().read(TestConfig.getSheetForPositiveTest());
 	}
 
 	@DataProvider
 	public static Object[][] readPositiveSortPriceTest() throws IOException {
-		return dataSourceFactory.readAll(TestConfig.getSheetForPositiveSortPriceTest());
+		return dataSourceFactory.getReader().read(TestConfig.getSheetForPositiveSortPriceTest());
 	}
 
 }

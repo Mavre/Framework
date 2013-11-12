@@ -11,12 +11,12 @@ import com.epam.reutska.dataprovider.TestDataProvider;
 public class DataSourceFactory{
 	
 	private static final Logger LOG = Logger.getLogger(TestDataProvider.class);
-	   public Object[][] readAll(int sheetNumber) throws IOException{
+	   public IReader getReader() throws IOException{
 	
 		   switch (TestConfig.getSourceData()) {
 			case "excel":
 				IReader read = new ExcelRead(TestConfig.getExcelFilePath());
-				return read.read(sheetNumber);
+				return read;
 			default:
 				LOG.error("DataSource isn't correct");
 				throw new IllegalArgumentException("DataSource isn't correct");
