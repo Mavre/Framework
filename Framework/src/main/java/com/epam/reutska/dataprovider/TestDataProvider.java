@@ -2,40 +2,23 @@ package com.epam.reutska.dataprovider;
 
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
 import org.testng.annotations.DataProvider;
 
 import com.epam.reutska.configuration.TestConfig;
-import com.epam.reutska.helpers.core.ExcelRead;
+import com.epam.reutska.helpers.core.DataSourceFactory;
 
 public class TestDataProvider {
-	private static final Logger LOG = Logger.getLogger(TestDataProvider.class);
+	//private static final Logger LOG = Logger.getLogger(TestDataProvider.class);
+	private static DataSourceFactory dataSourceFactory= new DataSourceFactory();
 	
 	@DataProvider
-	public static Object[][] readPositiveTest() throws IOException {
-		switch (TestConfig.getSourceData()) {
-		case "excel":
-			ExcelRead read = new ExcelRead(TestConfig.getExcelFilePath());
-			return read.readExcel(TestConfig.getSheetForPositiveTest());
-
-		default:
-			LOG.error("DataSource isn't correct");
-			throw new IllegalArgumentException("DataSource isn't correct");
-		}
+	public static Object[][] readPositiveTest( int sheetNumber) throws IOException {
+		return dataSourceFactory.readAll(TestConfig.getSheetForPositiveTest());
 	}
 
 	@DataProvider
 	public static Object[][] readPositiveSortPriceTest() throws IOException {
-		switch (TestConfig.getSourceData()) {
-		case "excel":
-			ExcelRead read = new ExcelRead(TestConfig.getExcelFilePath());
-			return read
-					.readExcel(TestConfig.getSheetForPositiveSortPriceTest());
-
-		default:
-			LOG.error("DataSource isn't correct");
-			throw new IllegalArgumentException("DataSource isn't correct");
-		}
+		return dataSourceFactory.readAll(TestConfig.getSheetForPositiveSortPriceTest());
 	}
 
 }
