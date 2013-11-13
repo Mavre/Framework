@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testData>
+	<page>
+		<line>
+			<data>Стиральные машины</data>
+			<data>Минимальная цена</data>
+			<data>2000</data>
+			<data>Максимальная цена</data>
+			<data>6000</data>
+		</line>
+		<line>
+			<data>Фотоаппараты</data>
+			<data>Минимальная цена</data>
+			<data>1000</data>
+			<data>Максимальная цена</data>
+			<data>2000</data>
+		</line>
+	</page>
+</testData>
