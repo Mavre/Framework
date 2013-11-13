@@ -17,7 +17,7 @@ public class TestConfig {
 	private static String sDirSeparator = System.getProperty("file.separator");
 
 	private static Properties props = new Properties();
-
+	
 	static {
 		try {
 			File currentDir = new File(".");
@@ -95,6 +95,13 @@ public class TestConfig {
 	public static String getSourceData() {
 		return props.getProperty("sourceData");
 	}
+	public static String  getOperaBinaryPath(){
+		return props.getProperty("operaBinaryPath");
+		
+	}
+	
+	
+	
 	/*
 	 * public static String getServer() { return server; }
 	 */
