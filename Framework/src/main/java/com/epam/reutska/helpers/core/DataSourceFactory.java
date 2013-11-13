@@ -18,7 +18,7 @@ public class DataSourceFactory{
 				 read = new ExcelRead(TestConfig.getExcelFilePath());
 				return read;
 			case "xml":
-				 read = new XMLReader(TestConfig.getExcelFilePath());
+				 read = new XMLReader(TestConfig.getXMLFilePath());
 				return read;
 			default:
 				LOG.error("DataSource isn't correct");

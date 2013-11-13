@@ -23,9 +23,6 @@ public class XMLReader implements IReader{
 	}
 	
 
-
-
-
 	@Override
 	public Object[][] read(int sheetNumber) throws IOException {
 		Object [][]array = null;
