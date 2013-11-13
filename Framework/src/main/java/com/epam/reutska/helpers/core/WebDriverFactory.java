@@ -114,11 +114,11 @@ public class WebDriverFactory {
 		if (browserType.equals("chrome"))
 			return new ChromeDriver(capabilities);
 		if (browserType.equals("opera")) {
-			DesiredCapabilities dc = DesiredCapabilities.opera();
-			dc.setCapability("opera.binary", TestConfig.getOperaBinaryPath());
-			//System.setProperty("opera.binary", TestConfig.getOperaBinaryPath());
+			//DesiredCapabilities dc = DesiredCapabilities.opera();
+			//dc.setCapability("opera.binary", TestConfig.getOperaBinaryPath());
+			System.setProperty("opera.binary", TestConfig.getOperaBinaryPath());
 	
-			return new OperaDriver(dc);
+			return new OperaDriver(capabilities);
 		}
 
 		throw new Error("Unrecognized browser type: " + browserType);
