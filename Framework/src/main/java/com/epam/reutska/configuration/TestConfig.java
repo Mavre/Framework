@@ -99,6 +99,10 @@ public class TestConfig {
 		return props.getProperty("operaBinaryPath");
 		
 	}
+	public static String  getInternetExplorerPath(){
+		return props.getProperty("internetExplorerPath");
+		
+	}
 	
 	
 	
