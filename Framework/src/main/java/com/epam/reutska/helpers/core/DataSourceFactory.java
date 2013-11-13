@@ -12,10 +12,13 @@ public class DataSourceFactory{
 	
 	private static final Logger LOG = Logger.getLogger(TestDataProvider.class);
 	   public IReader getReader() throws IOException{
-	
+		   IReader read=null;
 		   switch (TestConfig.getSourceData()) {
 			case "excel":
-				IReader read = new ExcelRead(TestConfig.getExcelFilePath());
+				 read = new ExcelRead(TestConfig.getExcelFilePath());
+				return read;
+			case "xml":
+				 read = new XMLReader(TestConfig.getExcelFilePath());
 				return read;
 			default:
 				LOG.error("DataSource isn't correct");

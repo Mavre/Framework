@@ -1,24 +1,14 @@
 package com.epam.reutska.helpers.core;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.Reader;
-import java.nio.charset.Charset;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
 
 public class XMLReader implements IReader{
 	
@@ -54,7 +44,7 @@ public class XMLReader implements IReader{
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[i].length; j++) {
 				
-				array[i][j]=rDoc.getRootElement().getChildren().get(i).getChildren().get(j).getText();
+				page.getChildren().get(i).getChildren().get(j).getText();
 			}
 
 		}

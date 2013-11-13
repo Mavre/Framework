@@ -88,6 +88,9 @@ public class TestConfig {
 	public static String getExcelFilePath() {
 		return String.format(props.getProperty("srcExcel"), className);
 	}
+	public static String getXMLFilePath() {
+		return String.format(props.getProperty("srcXML"), className);
+	}
 
 	public static String getSourceData() {
 		return props.getProperty("sourceData");
