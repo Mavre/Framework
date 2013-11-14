@@ -27,7 +27,7 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 				.getCapabilities());
 		File scrFile = ((TakesScreenshot) driver)
 				.getScreenshotAs(OutputType.FILE);
-		DateFormat dateFormat = new SimpleDateFormat("dd_MMM_yyyy__hh_mm_ssaa");
+		DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy__hh_mm_ssaa");
 		String destDir = "target/surefire-reports/screenshots";
 		new File(destDir).mkdirs();
 		String destFile = dateFormat.format(new Date()) + ".png";
