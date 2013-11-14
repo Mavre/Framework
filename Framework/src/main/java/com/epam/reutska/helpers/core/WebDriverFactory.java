@@ -109,19 +109,22 @@ public class WebDriverFactory {
 		String browserType = capabilities.getBrowserName();
 		if (browserType.equals("firefox"))
 			return new FirefoxDriver(capabilities);
-		if (browserType.startsWith("internet explorer")){
-			
-			
-		//	webdriver.ie.driver
-			System.setProperty("webdriver.ie.driver", TestConfig.getInternetExplorerPath());
-			return new InternetExplorerDriver(capabilities);}
-		if (browserType.equals("chrome"))
+		if (browserType.startsWith("internet explorer")) {
+
+			System.setProperty("webdriver.ie.driver",
+					TestConfig.getInternetExplorerPath());
+			return new InternetExplorerDriver(capabilities);
+		}
+		if (browserType.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					TestConfig.getChromePath());
+
 			return new ChromeDriver(capabilities);
+		}
 		if (browserType.equals("opera")) {
-			//DesiredCapabilities dc = DesiredCapabilities.opera();
-			//dc.setCapability("opera.binary", TestConfig.getOperaBinaryPath());
+
 			System.setProperty("opera.binary", TestConfig.getOperaBinaryPath());
-	
+
 			return new OperaDriver(capabilities);
 		}
 

@@ -103,6 +103,10 @@ public class TestConfig {
 		return props.getProperty("internetExplorerPath");
 		
 	}
+	public static String  getChromePath(){
+		return props.getProperty("chromePath");
+		
+	}
 	
 	
 	
