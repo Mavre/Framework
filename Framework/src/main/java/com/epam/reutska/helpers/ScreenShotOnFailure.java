@@ -27,26 +27,19 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 				.getCapabilities());
 		File scrFile = ((TakesScreenshot) driver)
 				.getScreenshotAs(OutputType.FILE);
-		DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy__hh_mm_ssaa");
-		String destDir = "target/surefire-reports/screenshots/";
-		//new File(destDir).mkdirs();
-		String destFile = dateFormat.format(new Date()) + ".png";
-		String newFileName = "screenshots/" + destFile;
-		
-		
-		
+		DateFormat dateFormat = new SimpleDateFormat("dd_MMM_yyyy__hh_mm_ssaa");
+		String destDir = "target/surefire-reports/screenshots";
 		new File(destDir).mkdirs();
-		File destFileName = new File(destDir + "/" + destFile);
+		String destFile = dateFormat.format(new Date()) + ".png";
 
 		try {
-			FileUtils.copyFile(scrFile, new File(destDir + "/" + destFileName));
+			FileUtils.copyFile(scrFile, new File(destDir + "/" + destFile));
 		} catch (IOException e) {
 			LOG.error("Creating file isn't possible",e);
 			e.printStackTrace();
 		}
 		Reporter.setEscapeHtml(false);
-		
-		Reporter.log("Saved <a href='screenshots/" + newFileName
-			    + "'>Screenshot</a>");
+		Reporter.log("Saved <a href=screenshots/" + destFile
+				+ ">Screenshot</a>");
 	}
 }
