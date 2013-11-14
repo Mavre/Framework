@@ -38,7 +38,7 @@ public class TestBase {
 	}
 
 	protected MainPage goToMainPage() {
-	
+		System.setProperty("org.uncommons.reportng.escape-output", "false");
 		driver.get(baseUrl + "/");
 		mainPage = new MainPage(driver);
 		PageFactory.initElements(driver, mainPage);
