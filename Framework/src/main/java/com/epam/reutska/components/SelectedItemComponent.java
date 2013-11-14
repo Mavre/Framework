@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Reporter;
 
 import com.epam.reutska.domain.BaseGood;
 
@@ -48,6 +49,7 @@ public class SelectedItemComponent extends Component {
 		BaseGood baseGood = new BaseGood();
 
 		baseGood.withPram(map);
+		Reporter.log("Setting minBoundaryRangePrice");
 		baseGood.setMinBoundaryRangePrice(Double.valueOf(minBoundaryRangePrice.getText().replaceAll(" ","")));
 		baseGood.setMaxBoundaryRangePrice(Double.valueOf(maxBoundaryRangePrice.getText().replaceAll(" ","")));
 		return baseGood;
