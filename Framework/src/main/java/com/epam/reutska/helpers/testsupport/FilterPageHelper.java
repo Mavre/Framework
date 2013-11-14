@@ -127,8 +127,8 @@ public class FilterPageHelper {
 
 		filterPage.clickFilterOptionValue(String.valueOf(filterNameMaxPrice),
 				String.valueOf(filterValueMaxPrice).replace(".0", ""));
-		double minPrice = (double) filterValueMinPrice;
-		double maxPrice = (double) filterValueMaxPrice;
+		double minPrice =Double.valueOf(filterValueMinPrice.toString());
+		double maxPrice = Double.valueOf(filterValueMaxPrice.toString());
 		for (BaseGood good : getFilterResults(filterPage, false)) {
 			assertTrue(good.getPrice() >= minPrice
 					&& good.getPrice() <= maxPrice, good.getPrice() + ">="
