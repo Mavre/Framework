@@ -28,18 +28,18 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 		File scrFile = ((TakesScreenshot) driver)
 				.getScreenshotAs(OutputType.FILE);
 		DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy__hh_mm_ssaa");
-		String destDir = "target/surefire-reports/html/screenshots";
+		//String destDir = "target/surefire-reports/html/screenshots";
 		//new File(destDir).mkdirs();
 		String destFile = dateFormat.format(new Date()) + ".png";
 		String relativeFileName = destFile;
 		
 		
 		
-		new File(destDir).mkdirs();
-		File destFileName = new File(destDir + "/" + destFile);
+		//new File(destDir).mkdirs();
+		File destFileName = new File( destFile);
 
 		try {
-			FileUtils.copyFile(scrFile, new File(destDir + "/" + destFileName));
+			FileUtils.copyFile(scrFile, new File( "/" + destFileName));
 		} catch (IOException e) {
 			LOG.error("Creating file isn't possible",e);
 			e.printStackTrace();
