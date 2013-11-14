@@ -107,6 +107,10 @@ public class TestConfig {
 		return props.getProperty("chromePath");
 		
 	}
+	public static String  getBaseURL(){
+		return props.getProperty("baseURL");
+		
+	}
 	
 	
 	

@@ -93,6 +93,7 @@
 				<configuration>
 					<systemPropertyVariables>
 						<browser>${browser}</browser>
+						<enviroment>${enviroment}</enviroment>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng-configurations/${test_case}.xml</suiteXmlFile>

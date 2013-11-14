@@ -27,11 +27,15 @@ public class TestBase {
 	public void init() {
 		TestConfig.setTestName(this.getClass().getSimpleName());
 	}
+
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = WebDriverFactory.getDriver(TestConfig.getCapabilities());
-
-		baseUrl = "http://pn.com.ua";
+		if (System.getProperty("baseURL").isEmpty()) {
+			baseUrl = TestConfig.getBaseURL();
+		} else {
+			baseUrl = System.getProperty("baseURL");
+		}
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		goToMainPage();
@@ -44,7 +48,5 @@ public class TestBase {
 		PageFactory.initElements(driver, mainPage);
 		return mainPage;
 	}
-
-	
 
 }
