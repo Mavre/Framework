@@ -31,7 +31,7 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 		String destDir = "target/surefire-reports/html/screenshots";
 		//new File(destDir).mkdirs();
 		String destFile = dateFormat.format(new Date()) + ".png";
-		String relativeFileName = "screenshots/" + destFile;
+		String relativeFileName = destFile;
 		
 		
 		
