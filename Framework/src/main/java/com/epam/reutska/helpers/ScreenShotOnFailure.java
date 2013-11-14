@@ -31,7 +31,7 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 		String destDir = "target/surefire-reports/screenshots/";
 		//new File(destDir).mkdirs();
 		String destFile = dateFormat.format(new Date()) + ".png";
-		String relativeFileName = "screenshots/" + destFile;
+		String newFileName = "screenshots/" + destFile;
 		
 		
 		
@@ -45,7 +45,8 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 			e.printStackTrace();
 		}
 		Reporter.setEscapeHtml(false);
-		Reporter.log("Saved <a href=../" + relativeFileName
-				+ ">Screenshot</a>");
+		
+		Reporter.log("Saved <a href='screenshots/" + newFileName
+			    + "'>Screenshot</a>");
 	}
 }
