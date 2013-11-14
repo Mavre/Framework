@@ -39,7 +39,7 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 			e.printStackTrace();
 		}
 		Reporter.setEscapeHtml(false);
-		Reporter.log("Saved <a href=../screenshots/" + destFile
+		Reporter.log("Saved <a href=screenshots/" + destFile
 				+ ">Screenshot</a>");
 	}
 }
