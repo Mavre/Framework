@@ -91,7 +91,7 @@ public class PricesPageHelper {
 				results.add(getItem(pricesPage, j));
 			}
 			if (pricesPage.getNavigationComponent().hasNext()) {
-				Reporter.log("GoNextPage"+"<br>");
+				//Reporter.log("GoNextPage"+"<br>");
 				pricesPage.clickLinkNavigationNext();
 			}
 		} while (pricesPage.getNavigationComponent().hasNext());
