@@ -32,7 +32,7 @@ public class TestBase {
 	public void setUp() throws Exception {
 		driver = WebDriverFactory.getDriver(TestConfig.getCapabilities());
 		
-			baseUrl = System.getProperty("baseURL");
+			baseUrl = System.getProperty("enviroment");
 		
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
