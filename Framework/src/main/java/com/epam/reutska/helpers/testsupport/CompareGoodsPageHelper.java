@@ -2,6 +2,9 @@ package com.epam.reutska.helpers.testsupport;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Reporter;
+
+import com.epam.reutska.configuration.TestConfig;
 import com.epam.reutska.domain.BaseGood;
 import com.epam.reutska.pages.CompareGoodsPage;
 import com.epam.reutska.pages.FilterPage;
@@ -38,7 +41,7 @@ public class CompareGoodsPageHelper {
 		secondGood = FilterPageHelper.getItem(filterPage,1, true);
 
 		filterPage.clickLinkResultItemFirstAddCompare();
-
+		Reporter.log("ClickToCompareFirstGood :" + TestConfig.getExcelFilePath());
 		filterPage.clickLinkResultItemSecondAddCompare();
 
 		filterPage.clickLinkGoToComparingPage();
