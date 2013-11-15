@@ -125,10 +125,10 @@ public class FilterPageHelper {
 	public static void verifyFilterOptionByPrice(FilterPage filterPage,
 			String filterNameMinPrice, Object filterValueMinPrice,
 			String filterNameMaxPrice, Object filterValueMaxPrice) {
-		Reporter.log("ChooseMinPrice"+"<br>");
+		Reporter.log("ChooseMinPrice "+  filterValueMinPrice+"<br>");
 		filterPage.clickFilterOptionValue(String.valueOf(filterNameMinPrice),
 				String.valueOf(filterValueMinPrice).replace(".0", ""));
-		Reporter.log("ChooseMinPrice"+"<br>");
+		Reporter.log("ChooseMaxPrice "+ filterValueMaxPrice+"<br>");
 		filterPage.clickFilterOptionValue(String.valueOf(filterNameMaxPrice),
 				String.valueOf(filterValueMaxPrice).replace(".0", ""));
 		double minPrice =Double.valueOf(filterValueMinPrice.toString());
