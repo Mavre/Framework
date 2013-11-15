@@ -14,51 +14,33 @@ public class FilterResultsComponents extends Component {
 	public static final String LINK_RESULT_ITEM_PRICE = ".//div[@class='price']/strong";
 	public static final String LINK_RESULT_ITEM_FIRST_ADD_COMPARE = "//div[@class='item'][1]//span[@class='compare_add_link comparep cs']";
 	public static final String LINK_RESULT_ITEM_SECOND_ADD_COMPARE = "//div[@class='item'][2]//span[@class='compare_add_link comparep cs']";
-	public static final String GO_TO_COMPARING_PAGE="//a[contains(@href,'compare')]";
-	
-	public static final String NAME_FIRST_GOOD="//div[@class='item'][1]/div[@class='name']/a";
-	public static final String NAME_SECOND_GOOD="//div[@class='item'][2]/div[@class='name']/a";
-	public static final String PRICE_ONE_GOOD="//div[@class='item'][%s]/div[@class='price']/strong";
-	//public static final String PRICE_SECOND_GOOD="//div[@class='item'][2]/div[@class='price']/strong";
+	public static final String GO_TO_COMPARING_PAGE = "//a[contains(@href,'compare')]";
 
-	public static final String NAME_ONE_GOOD="//div[@class='item'][%s]/div[@class='name']/a";
-	
-	
-	
+	public static final String NAME_FIRST_GOOD = "//div[@class='item'][1]/div[@class='name']/a";
+	public static final String NAME_SECOND_GOOD = "//div[@class='item'][2]/div[@class='name']/a";
+	public static final String PRICE_ONE_GOOD = "//div[@class='item'][%s]/div[@class='price']/strong";
+
+	public static final String NAME_ONE_GOOD = "//div[@class='item'][%s]/div[@class='name']/a";
+
 	public FilterResultsComponents(WebDriver driver) {
 		super(driver);
 	}
+
 	@FindBy(css = FilterResultsComponents.DESCRIPTION_RESULT_ITEMS)
-	private List< WebElement> descriptionResultItems;
-	
+	private List<WebElement> descriptionResultItems;
+
 	@FindBy(css = FilterResultsComponents.NAME_ONE_GOOD)
 	private WebElement nameOneGood;
-	
+
 	@FindBy(xpath = FilterResultsComponents.NAME_FIRST_GOOD)
 	private WebElement nameFirstGood;
-	
-	
-	
+
 	@FindBy(xpath = FilterResultsComponents.NAME_SECOND_GOOD)
 	private WebElement nameSecondGood;
-	
-	
+
 	@FindBy(xpath = FilterResultsComponents.PRICE_ONE_GOOD)
 	private WebElement priceOneGood;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	@FindBy(xpath = FilterResultsComponents.GO_TO_COMPARING_PAGE)
 	private WebElement goToComparingPage;
 	@FindBy(css = FilterResultsComponents.LINK_RESULT_ITEMS)
@@ -86,6 +68,7 @@ public class FilterResultsComponents extends Component {
 	public List<WebElement> getLinkResultItemName() {
 		return linkResultItemName;
 	}
+
 	public WebElement getGoToComparingPage() {
 		return goToComparingPage;
 	}
@@ -97,24 +80,25 @@ public class FilterResultsComponents extends Component {
 	public List<WebElement> getLinkResultItems() {
 		return linkResultItems;
 	}
-	
+
 	public WebElement getNameFirstGood() {
 		return nameFirstGood;
 	}
+
 	public WebElement getNameSecondGood() {
 		return nameSecondGood;
 	}
+
 	public WebElement getPriceOneGood() {
 		return priceOneGood;
 	}
-	
+
 	public WebElement getNameOneGood() {
 		return nameOneGood;
 	}
 
-	public List< WebElement> getDescriptionResultItems() {
+	public List<WebElement> getDescriptionResultItems() {
 		return descriptionResultItems;
 	}
 
-	
 }

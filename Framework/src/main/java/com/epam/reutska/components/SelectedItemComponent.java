@@ -55,7 +55,6 @@ public class SelectedItemComponent extends Component {
 		BaseGood baseGood = new BaseGood();
 
 		baseGood.withPram(map);
-		 //Reporter.log("Setting minBoundaryRangePrice");
 		if (linkAllShops.size() == 1) {
 			double price=Double.valueOf(selectedItemPrice
 					.getText().replaceAll("( )|(грн)", ""));

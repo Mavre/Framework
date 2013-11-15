@@ -60,7 +60,6 @@ public class TestConfig {
 		}
 	}
 
-	// private static String server = "http://localhost/Maslova/";
 
 	private static volatile String className = "";
 
@@ -81,9 +80,7 @@ public class TestConfig {
 		return excelSheetForPositiveSortPriceTest;
 	}
 
-	/*
-	 * public static String getMailFolderPath() { return mailFolderPath; }
-	 */
+	
 
 	public static String getExcelFilePath() {
 		return String.format(props.getProperty("srcExcel"), className);
@@ -114,8 +111,6 @@ public class TestConfig {
 	
 	
 	
-	/*
-	 * public static String getServer() { return server; }
-	 */
+	
 
 }
