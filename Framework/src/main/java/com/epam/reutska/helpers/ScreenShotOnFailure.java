@@ -36,6 +36,7 @@ public class ScreenShotOnFailure extends TestListenerAdapter {
 			FileUtils.copyFile(scrFile, new File(destDir + "/" + destFile));
 		} catch (IOException e) {
 			LOG.error("Creating file isn't possible",e);
+			Reporter.log("Creating file isn't possible");
 			e.printStackTrace();
 		}
 		Reporter.setEscapeHtml(false);
