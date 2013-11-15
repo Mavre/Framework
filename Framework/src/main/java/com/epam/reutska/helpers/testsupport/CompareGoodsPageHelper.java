@@ -39,9 +39,9 @@ public class CompareGoodsPageHelper {
 		firstGood = FilterPageHelper.getItem(filterPage,0, true);
 
 		secondGood = FilterPageHelper.getItem(filterPage,1, true);
-		Reporter.log("ChooseFirstGoodToCompare :"+"<br>");
+		Reporter.log("ChooseFirstGoodToCompare"+"<br>");
 		filterPage.clickLinkResultItemFirstAddCompare();
-		Reporter.log("ChooseSecondGoodToCompare :"+"<br>");
+		Reporter.log("ChooseSecondGoodToCompare"+"<br>");
 		filterPage.clickLinkResultItemSecondAddCompare();
 		Reporter.log("<font color=\"red\">"+"GoingToComparingPage :"+"</font>"+"<br>");
 		filterPage.clickLinkGoToComparingPage();
