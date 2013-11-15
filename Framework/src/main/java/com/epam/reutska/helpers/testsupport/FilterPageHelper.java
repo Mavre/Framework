@@ -65,7 +65,7 @@ public class FilterPageHelper {
 		BaseGood baseGood = new BaseGood();
 
 		if (readAllParams) {
-			Reporter.log("ChooseOneGood :"+"<br>");
+			Reporter.log("ChooseOneGood"+"<br>");
 			filterPage.clickItemName(row);
 
 			SelectedItemComponent selectedItemComponent = MyPageFactory
