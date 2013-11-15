@@ -12,6 +12,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
 import com.epam.reutska.components.SelectedItemComponent;
 import com.epam.reutska.domain.BaseGood;
@@ -30,6 +31,7 @@ public class FilterPageHelper {
 				results.add(getItem(filterPage, j, readAllParams));
 			}
 			if (filterPage.getNavigationComponent().hasNext()) {
+				Reporter.log("<font color=\"red\">"+"GoingNextPage :"+"</font>"+"<br>");
 				filterPage.clickLinkNavigationNext();
 
 				/*i++;
@@ -63,6 +65,7 @@ public class FilterPageHelper {
 		BaseGood baseGood = new BaseGood();
 
 		if (readAllParams) {
+			Reporter.log("ChooseOneGood :"+"<br>");
 			filterPage.clickItemName(row);
 
 			SelectedItemComponent selectedItemComponent = MyPageFactory
@@ -84,6 +87,7 @@ public class FilterPageHelper {
 	public static void verifyNameSorting(FilterPage filterPage) {
 
 		Collator collator = Collator.getInstance();
+		Reporter.log("SortingByName"+"<br>");
 
 		filterPage.clickLinkSortName();
 
@@ -105,7 +109,7 @@ public class FilterPageHelper {
 	public static void verifyPriceSorting(FilterPage filterPage) {
 
 		filterPage = new FilterPage(filterPage.driver);
-
+		Reporter.log("SortingByPrice"+"<br>");
 		filterPage.clickLinkSortPrice();
 
 		List<BaseGood> list = getFilterResults(filterPage, false);
@@ -121,10 +125,10 @@ public class FilterPageHelper {
 	public static void verifyFilterOptionByPrice(FilterPage filterPage,
 			String filterNameMinPrice, Object filterValueMinPrice,
 			String filterNameMaxPrice, Object filterValueMaxPrice) {
-
+		Reporter.log("ChooseMinPrice"+"<br>");
 		filterPage.clickFilterOptionValue(String.valueOf(filterNameMinPrice),
 				String.valueOf(filterValueMinPrice).replace(".0", ""));
-
+		Reporter.log("ChooseMinPrice"+"<br>");
 		filterPage.clickFilterOptionValue(String.valueOf(filterNameMaxPrice),
 				String.valueOf(filterValueMaxPrice).replace(".0", ""));
 		double minPrice =Double.valueOf(filterValueMinPrice.toString());
@@ -138,7 +142,7 @@ public class FilterPageHelper {
 
 	public static void verifyFilterOptionByProducer(FilterPage filterPage,
 			String filterName) {
-
+		Reporter.log("ChooseAllProducers"+"<br>");
 		filterPage.clickLinkShowAllProducers();
 
 		Set<String> filterSet = new HashSet<>();
@@ -165,7 +169,7 @@ public class FilterPageHelper {
 
 	public static void verifyFilterOptionByWeightAdjustment(
 			FilterPage filterPage, String filterName, String filterParam) {
-
+		Reporter.log("ChooseFilterParam "+"\"Регулировка веса\""+"<br>");
 		filterPage.clickFilterOptionValue(filterName, filterParam);
 		List<BaseGood> itemsDescription = getFilterResults(filterPage, false);
 		for (BaseGood goodDescription : itemsDescription) {

@@ -15,7 +15,7 @@ public class CompareGoodsPage extends AnyPage {
 	}
 	
 	public CompareGoodsComponent getCompareGoodsComponent() {
-		Reporter.log("getCompareGoodsComponent");
+		
 		return compareGoodsComponent;
 	}
 }

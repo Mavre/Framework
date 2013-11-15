@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
 import com.epam.reutska.domain.BaseGood;
 import com.epam.reutska.pages.FilterPage;
@@ -29,14 +30,17 @@ public class PricesPageHelper {
 					true));
 
 		}
+		Reporter.log("GoingPricesPage"+"<br>");
 		filterPage.clickLinkGoToPricesPage();
 
 		List<BaseGood> itemsPricesList = new ArrayList<>();
 		List<BaseGood> helpList = new ArrayList<>();
 		for (int i = 0; i < itemsAllInformation.size(); i++) {
 			pricesPage.cleanInputSearchField();
+			Reporter.log("WriteGoodToSearch"+"<br>");
 			pricesPage.writeNameItemInputSearchField(itemsAllInformation.get(i)
 					.getName());
+			Reporter.log("SearchDesiredGood"+"<br>");
 			pricesPage.clickSearchButton();
 			helpList = PricesPageHelper.getFilterResults(pricesPage);
 			for (int j = 0; j < helpList.size(); j++) {
@@ -87,6 +91,7 @@ public class PricesPageHelper {
 				results.add(getItem(pricesPage, j));
 			}
 			if (pricesPage.getNavigationComponent().hasNext()) {
+				Reporter.log("GoNextPage"+"<br>");
 				pricesPage.clickLinkNavigationNext();
 			}
 		} while (pricesPage.getNavigationComponent().hasNext());
@@ -126,6 +131,7 @@ public class PricesPageHelper {
 
 		List<BaseGood> catalogItems = new ArrayList<>();
 
+		Reporter.log("SortingByPrice"+"<br>");
 		filterPage.clickLinkSortPrice();
 		for (int i = 0; i < 4; i++) {
 			catalogItems.add(FilterPageHelper.getItem(filterPage,i, false));
@@ -136,6 +142,7 @@ public class PricesPageHelper {
 			itemsAllInformation.add(FilterPageHelper.getItem(filterPage,i, true));
 
 		}
+		Reporter.log("GoingPricesPage"+"<br>");
 		filterPage.clickLinkGoToPricesPage();
 
 		List<BaseGood> itemsPricesList = new ArrayList<>();
@@ -143,8 +150,9 @@ public class PricesPageHelper {
 		
 		for (int i = 0; i < itemsAllInformation.size(); i++) {
 			pricesPage.cleanInputSearchField();
+			Reporter.log("WriteGoodToSearch"+"<br>");
 			pricesPage.writeNameItemInputSearchField(itemsAllInformation.get(i).getName());
-			
+			Reporter.log("SearchDesiredGood"+"<br>");
 			pricesPage.clickSearchButton();
 			helpList = PricesPageHelper.getFilterResults(pricesPage);
 			for (int j = 0; j < helpList.size(); j++) {

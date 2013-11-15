@@ -6,6 +6,7 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -36,6 +37,7 @@ public class TestBase {
 		
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		Reporter.log("GoingMainPage"+"<br>");
 		goToMainPage();
 	}
 
