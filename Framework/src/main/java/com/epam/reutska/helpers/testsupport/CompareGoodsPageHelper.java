@@ -41,7 +41,7 @@ public class CompareGoodsPageHelper {
 		secondGood = FilterPageHelper.getItem(filterPage,1, true);
 
 		filterPage.clickLinkResultItemFirstAddCompare();
-		Reporter.log("ClickToCompareFirstGood :" + TestConfig.getExcelFilePath());
+		Reporter.log("ClickToCompareSecondGood :");
 		filterPage.clickLinkResultItemSecondAddCompare();
 
 		filterPage.clickLinkGoToComparingPage();

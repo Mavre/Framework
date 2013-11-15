@@ -1,6 +1,7 @@
 package com.epam.reutska.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 import com.epam.reutska.components.CompareGoodsComponent;
 import com.epam.reutska.helpers.core.MyPageFactory;
@@ -14,6 +15,7 @@ public class CompareGoodsPage extends AnyPage {
 	}
 	
 	public CompareGoodsComponent getCompareGoodsComponent() {
+		Reporter.log("getCompareGoodsComponent");
 		return compareGoodsComponent;
 	}
 }
