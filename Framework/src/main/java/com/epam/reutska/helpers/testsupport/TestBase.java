@@ -31,12 +31,9 @@ public class TestBase {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = WebDriverFactory.getDriver(TestConfig.getCapabilities());
-		if (System.getProperty("baseURL") == null
-				|| System.getProperty("baseURL").isEmpty()) {
-			baseUrl = TestConfig.getBaseURL();
-		} else {
+		
 			baseUrl = System.getProperty("baseURL");
-		}
+		
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		goToMainPage();
