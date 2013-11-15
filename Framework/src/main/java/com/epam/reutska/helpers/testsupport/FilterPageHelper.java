@@ -31,7 +31,7 @@ public class FilterPageHelper {
 				results.add(getItem(filterPage, j, readAllParams));
 			}
 			if (filterPage.getNavigationComponent().hasNext()) {
-				Reporter.log("<font color=\"red\">"+"GoingNextPage"+"</font>"+"<br>");
+				Reporter.log("GoingNextPage"+"<br>");
 				filterPage.clickLinkNavigationNext();
 
 				/*i++;
